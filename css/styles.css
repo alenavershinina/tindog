@@ -1,36 +1,43 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 1.5;
-  color: white;
-}
-
-h2 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 1.5rem;
 }
 
 p {
   color: #8f8f8f;
 }
 
-#title {
+/* Headings */
+.big-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
   background-color: #ff4c68;
-  padding: 3% 15% 12%;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
 }
 
 /* Navigation Bar */
-
 .navbar {
   padding: 0 0 4.5rem;
 }
@@ -46,27 +53,43 @@ p {
   font-weight: 500;
 }
 
-/* Download Buttons */
+/* Title Section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
 
+/* Download Buttons */
 .download-button {
   margin: 5% 3% 5% 0;
 }
 
 /* Title Image */
-
 .iphone-img {
   transform: rotate(20deg);
   position: absolute;
   right: 20%;
+  width: 60%;
+}
+
+@media (max-width: 1200px) {
+  #title {
+    text-align: center;
+  }
+
+  .iphone-img {
+    position: static;
+    transform: rotate(0);
+  }
 }
 
 /* Features */
-
 #features {
-  background-color: white;
   position: relative;
-  text-align: center;
-  padding: 10% 5%;
+}
+
+.featute-title {
+  font-size: 1.5rem;
 }
 
 .feature-icon {
@@ -79,28 +102,24 @@ p {
 }
 
 /* Testimonials */
-
 #testimonials {
   background-color: #ef8172;
-  text-align: center;
-  color: white;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
   border-radius: 100%;
-  width: 10%;
+  width: 130px;
   padding: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 /* Press */
-
 #press {
   background-color: #ef8172;
-  text-align: center;
 }
 
 .press-logo {
@@ -109,17 +128,30 @@ p {
 }
 
 /* Pricing */
-
-#pricing {
-  text-align: center;
-  padding: 100px;
+#pricing .container-fluid {
+  padding: 7%;
 }
 
 .pricing-row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .pricing-column {
-  padding: 3% 2%;
+  margin-top: 10px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Call To Action */
+/* Footer */
+.social-networks {
+  margin: 0 10px 20px;
+}
+
+#footer .container-fluid {
+  padding: 7% 15% 3%;
 }
